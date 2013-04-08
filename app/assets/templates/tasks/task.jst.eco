@@ -1,0 +1,1 @@
+<%= @task.get('name') %> <br /> <%= @task.get('complete') %> <br/> <button id="Toggle">Toggle</button>

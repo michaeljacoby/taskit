@@ -1,0 +1,12 @@
+window.Taskit =
+  Models: {}
+  Collections: {}
+  Views: {}
+  Routers: {}
+  initialize: -> 
+    alert "taskit.js"
+    new Taskit.Routers.Tasks
+    Backbone.history.start()
+
+$(document).ready ->
+  Taskit.initialize()
