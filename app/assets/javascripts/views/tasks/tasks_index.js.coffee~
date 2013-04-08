@@ -4,11 +4,13 @@ class Taskit.Views.TasksIndex extends Backbone.View
 
   events:
           'submit #new_task': 'createTask'
-          'click #Toggle': 'deleteTask'
+          'submit #remove_Task': 'deleteTask'
 
   initialize: ->
     @collection.on('reset', @render, this)
     @collection.on('add', @render, this)
+    @collection.on('update', @render, this)
+    @collection.on('put', @render, this)
 
 
 
@@ -26,8 +28,6 @@ class Taskit.Views.TasksIndex extends Backbone.View
 
   deleteTask: (event) ->
     event.preventDefault()
-    @collection.update()
-    alert "Tasks_index fired"
 
 
   appendTask: (task) ->
@@ -40,10 +40,3 @@ class Taskit.Views.TasksIndex extends Backbone.View
       for attribute, messages of errors
         alert "#(attribute) #{message}" for message in messages
       
-
-  update: ->
-    if(this.model.get('complete') == true)
-      this.model.set('complete' : false).save()
-    else
-      this.model.set('complete' : true).save()
-

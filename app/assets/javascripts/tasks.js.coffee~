@@ -12,7 +12,11 @@ class Taskit.Views.Task extends Backbone.View
     this
 
   Toggle: ->
-   @model.update()
+    if(this.model.get('complete') == true)
+      this.model.set('complete' : false).save()
+    else
+      this.model.set('complete' : true).save()
+
 
 
     

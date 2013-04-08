@@ -4,7 +4,6 @@ window.Taskit =
   Views: {}
   Routers: {}
   initialize: -> 
-    alert "taskit.js"
     new Taskit.Routers.Tasks
     Backbone.history.start()
 

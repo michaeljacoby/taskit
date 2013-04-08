@@ -27,7 +27,6 @@ class Taskit.Views.TasksIndex extends Backbone.View
   deleteTask: (event) ->
     event.preventDefault()
     @collection.update()
-    alert "Tasks_index fired"
 
 
   appendTask: (task) ->

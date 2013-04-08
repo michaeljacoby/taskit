@@ -6,7 +6,7 @@ respond_to :json
   end
 
   def show
-    respond_with Task.find()
+    respond_with Task.find(1)
   end
 
   def create
