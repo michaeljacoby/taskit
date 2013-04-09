@@ -4,7 +4,7 @@ A simple one page app that renders updates on the page with backbone.
 
 Current Version 0.2
 
-http://boiling-lake-8482.herokuapp.com/
+http://taskitmkj.herokuapp.com/
 
 Taskit is a simple website that focuses on using backbone and rails. The focus is to have a single page that renders any database updates rather then reloading the page.
 I am mainly putting this together as a proof of concept for another app.
