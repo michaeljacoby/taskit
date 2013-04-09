@@ -15,11 +15,14 @@ I am mainly putting this together as a proof of concept for another app.
 Update 0.2
 
 Added basic css formating.
+
 Removed several files from twitter/bootstrap that created undesirable traits.
 
 
 Update 0.1
 
 Can add tasks to page.
+
 Can toggle tasks from being complete or incomplete.
+
 Any changes affect the database and will not loss their value when user returns.
